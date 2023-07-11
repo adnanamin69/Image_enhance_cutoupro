@@ -7,7 +7,7 @@ Image Enhance CutouPro is an Android application that allows users to enhance th
 ## Features
 
 - Image Enhancement: Enhance the quality of old images or photos.
-- Cutout Pro API Integration: Utilize the CutouPro API to enhance images.
+- Cutout Pro API Integration: Utilize the CutouPro API (available at https://www.cutout.pro/api) to enhance images.
 - Retrofit 2: Perform network requests efficiently.
 - Hilt: Simplify dependency injection in the application.
 
