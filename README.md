@@ -1,5 +1,7 @@
 # Image Enhance CutouPro Android Application
 
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
 Image Enhance CutouPro is an Android application that allows users to enhance their old images or photos using the CutouPro API. The app utilizes Retrofit 2 for network requests and Hilt for dependency injection.
 
 ## Features
