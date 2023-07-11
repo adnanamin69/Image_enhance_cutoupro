@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-Image Enhance CutouPro is an Android application that allows users to enhance their old images or photos using the CutouPro API. The app utilizes Retrofit 2 for network requests and Hilt for dependency injection.
+Image Enhance CutouPro is an Android application that allows users to enhance their old images or photos using the CutouPro API. The app utilizes Retrofit 2 for network requests, MVVM and Hilt for dependency injection.
 
 ## Features
 
@@ -26,7 +26,7 @@ git clone https://github.com/adnanamin69/Image_enhance_cutoupro.git
 3. In the `pkg/network/ApiService.kt` file, replace the placeholder API key with your own CutouPro API key:
 
 ```kotlin
-private const val API_KEY = "YOUR_API_KEY_HERE"
+   @Headers("APIKEY: yourKey")// todo add your api key here
 ```
 
 4. Build and run the application on an Android device or emulator.
@@ -39,11 +39,9 @@ Once the Image Enhance CutouPro app is installed and running on your Android dev
 
 2. Tap on the "Select Image" button to choose an image from your device's gallery.
 
-3. After selecting an image, tap on the "Enhance Image" button.
+3. The app will send a request to the CutouPro API to enhance the image. Wait for the response.
 
-4. The app will send a request to the CutouPro API to enhance the image. Wait for the response.
-
-5. Once the enhancement is complete, the enhanced image will be displayed on the screen.
+4. Once the enhancement is complete, the enhanced image will be displayed on the screen.
 
 ## Dependencies
 
