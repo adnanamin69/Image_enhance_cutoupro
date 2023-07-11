@@ -1,22 +1,16 @@
 package com.example.myapplication.di
 
-import com.example.myapplication.ApiResponse
+import com.example.myapplication.network.ApiService
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import okhttp3.MultipartBody
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
-import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.http.Headers
-import retrofit2.http.Multipart
-import retrofit2.http.POST
-import retrofit2.http.Part
 
 
 @Module
@@ -59,10 +53,4 @@ object NetworkModule {
     }
 }
 
-interface ApiService {
 
-    @Headers("APIKEY: yourKey")// todo add your api key here
-    @Multipart
-    @POST("api/v1/photoEnhance2")
-    suspend fun uploadImage(@Part file: MultipartBody.Part): Response<ApiResponse>
-}
